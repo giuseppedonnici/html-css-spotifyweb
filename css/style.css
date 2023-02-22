@@ -2,7 +2,7 @@
     --sidebar-width: 200px;
     --player-height: 100px;
     --header-height: 80px;
-    --nav-content-height: 30px;
+    --navbar-height: 30px;
 }
 /* RESET */
 * {
@@ -93,11 +93,10 @@ main {
     height: calc(100% - var(--header-height));
 }
 
-.nav-content {
+.navbar {
     width: 100%;
     margin-top: var(--header-height);
-    line-height: var(--nav-content-height);
-    background-color: aquamarine;
+    padding-top: 15px;
 }
 
 section {
@@ -153,7 +152,7 @@ body {
     display: none;
 }
 
-ul {
+.sidebar ul {
     margin-bottom: 25px;
 }
 
@@ -162,7 +161,7 @@ ul img {
     vertical-align: middle;
 }
 
-ul li {
+.sidebar ul li {
     padding: 5px 15px;
 }
 
@@ -209,3 +208,25 @@ ul li {
     width: calc(100% - 30px);
     margin: 5px 15px;
 }
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: #656565;
+}
+
+/* ********Trick******** */
+.evidenza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evi-bord {
+    border: 2px solid #ADFF2F;
+    width: 30%;
+}
+/* ********Trick******** */
