@@ -29,6 +29,11 @@ ul {
     font-weight: bold;
 }
 
+/* Common */
+ul li:not(:first-child) {
+    color: #656565;
+}
+
 /* Layout */
 .wrapper {
     width: 100%;
@@ -70,20 +75,6 @@ main {
     color: white;
 }
 
-/* Sidebar layout */
-.up, .down {
-    /* debug */
-    border: 1px solid white;
-}
-
-.up {
-    height: 60%;
-}
-
-.down {
-    height: 15%;
-}
-
 /* Content layout */
 .header {
     position: fixed;
@@ -94,8 +85,7 @@ main {
     justify-content: flex-end;
     width: calc(100% - var(--sidebar-width));
     height: var(--header-height);
-    /* debug */
-    background-color: darkkhaki;
+    background-color: rgba(0,0,0, 0.8);
 }
 
 .main-content {
@@ -149,7 +139,7 @@ body {
     border: 1px solid white;
     border-radius: 25px;
     padding: 10px 40px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /* sidebar up */
@@ -187,12 +177,13 @@ ul li {
 .playlist i {
     padding: 10px;
     color: black;
-    background-color: grey;
+    background-color: #656565;
 }
 
 /* sidebar down */
 .install {
     width: calc(100% - 30px);
+    color: #656565;
     margin: 0 15px;
     border-bottom: 1px solid white;
     padding-bottom: 10px;
@@ -203,7 +194,7 @@ ul li {
     vertical-align: middle;
 }
 
-.circle-container {
+.circle {
     display: inline-block;
     width: 40px;
     height: 40px;
