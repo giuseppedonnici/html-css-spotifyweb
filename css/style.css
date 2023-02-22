@@ -81,7 +81,7 @@ main {
 }
 
 .down {
-    height: 10%;
+    height: 15%;
 }
 
 /* Content layout */
@@ -156,6 +156,11 @@ body {
 .logo {
     width: 65%;
     margin: 15px;
+}
+
+.logo-small {
+    width: 40%;
+    display: none;
 }
 
 ul {

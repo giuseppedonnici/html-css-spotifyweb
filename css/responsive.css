@@ -1,0 +1,42 @@
+/* Sidebar */
+@media screen and (max-width: 600px) {
+    :root {
+        --sidebar-width: 50px;
+    }
+
+    .home span, .playlist, .down span, .logo {
+        display: none;
+    }
+    
+    .home li:first-child {
+        border-left: none;
+    }
+
+    ul img {
+        width: 100%;
+    }
+
+    .logo-small {
+        display: block;
+        margin-left: 15px;
+    }
+
+    .install {
+        border-bottom: none;
+    }
+
+    .install img {
+        width: 100%;
+    }
+
+    .circle-container {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sidebar .down {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
