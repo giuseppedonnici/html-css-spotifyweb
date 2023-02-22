@@ -30,6 +30,9 @@ main {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: var(--sidebar-width);
     height: 100%;
     /* debug */
@@ -66,6 +69,19 @@ section {
     height: 350px;
     background-color: chartreuse;
     border: 1px solid red;
+}
+
+.up, .down {
+    /* debug */
+    border: 1px solid white;
+}
+
+.up {
+    height: 50%;
+}
+
+.down {
+    height: 10%;
 }
 
 /* Common */
