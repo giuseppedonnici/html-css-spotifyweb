@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Layout */
 .wrapper {
     width: 100%;
@@ -35,6 +40,7 @@ main {
 
 /* Main layout */
 .content {
+    position: relative;
     width: calc(100% - var(--sidebar-width));
     height: 100%;
     overflow-y: auto;
@@ -66,7 +72,13 @@ main {
 
 /* Content layout */
 .header {
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(100% - var(--sidebar-width));
     height: var(--header-height);
     /* debug */
     background-color: darkkhaki;
@@ -79,6 +91,7 @@ main {
 
 .nav-content {
     width: 100%;
+    margin-top: var(--header-height);
     line-height: var(--nav-content-height);
     background-color: aquamarine;
 }
@@ -104,3 +117,13 @@ body {
 }
 
 /* MAIN */
+/* header */
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin-right: 10px;
+}
