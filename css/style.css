@@ -2,6 +2,7 @@
     --sidebar-width: 200px;
     --player-height: 100px;
     --header-height: 80px;
+    --nav-content-height: 30px;
 }
 /* RESET */
 * {
@@ -25,6 +26,7 @@ main {
 .content {
     width: calc(100% - var(--sidebar-width));
     height: 100%;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -51,7 +53,19 @@ main {
 .main-content {
     width: 100%;
     height: calc(100% - var(--header-height));
-    background-color: blue;
+}
+
+.nav-content {
+    width: 100%;
+    line-height: var(--nav-content-height);
+    background-color: aquamarine;
+}
+
+section {
+    /* debug */
+    height: 350px;
+    background-color: chartreuse;
+    border: 1px solid red;
 }
 
 /* Common */
