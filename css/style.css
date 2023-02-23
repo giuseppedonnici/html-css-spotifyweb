@@ -408,3 +408,12 @@ section p {
 .header a:hover {
     transform: scale(1.1);
 }
+
+.player .left .card-content p:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.player .left .heart-folder a:hover {
+    color: white;
+}
