@@ -34,6 +34,10 @@ img {
     font-weight: bold;
 }
 
+.text-white {
+    color: white;
+}
+
 /* Common */
 ul li:not(:first-child) {
     color: #656565;
@@ -86,7 +90,7 @@ main {
     width: var(--sidebar-width);
     height: 100%;
     background-color: black;
-    color: white;
+    color: #656565;
 }
 
 /* Content layout */
@@ -177,10 +181,6 @@ ul img {
 
 .home li:first-child {
     border-left: 3px solid #ADFF2F;
-}
-
-.home span, .playlist span {
-    margin-left: 10px;
 }
 
 .playlist i {
@@ -373,3 +373,10 @@ section p {
     align-items: center;
 }
 /* /Footer right */
+
+/* HOVER */
+.navbar span:hover,
+.sidebar span:hover {
+    color: white;
+}
+
