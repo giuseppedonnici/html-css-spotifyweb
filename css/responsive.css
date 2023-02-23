@@ -68,7 +68,12 @@
     }
 }
 
-/* Footer left */
+/* Footer */
+@media screen and (max-width:600px) {
+    .player .left, .player .right {
+        width: 250px;
+    }
+}
 @media screen and (max-width:700px) {
     .heart-folder {
         flex-direction: column;
