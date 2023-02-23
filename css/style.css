@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --sidebar-width: 200px;
     --player-height: 100px;
@@ -38,6 +39,16 @@ ul li:not(:first-child) {
     color: #656565;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 15px;
+    color: white;
+    background-color: #141922;
+}
+
 /* Layout */
 .wrapper {
     width: 100%;
@@ -74,7 +85,6 @@ main {
     justify-content: space-between;
     width: var(--sidebar-width);
     height: 100%;
-    /* debug */
     background-color: black;
     color: white;
 }
@@ -95,18 +105,13 @@ main {
 .main-content {
     width: 100%;
     height: calc(100% - var(--header-height));
-    background-color: #141922;
 }
 
 .navbar {
     width: 100%;
     margin-top: var(--header-height);
     padding-top: 15px;
-}
-
-section {
-    padding: 15px;
-    color: white;
+    background-color: #141922;
 }
 
 .row {
@@ -128,10 +133,6 @@ section {
     border: 1px solid blue;
 }
 
-/* Common */
-body {
-    font-family: 'Montserrat', sans-serif;
-}
 
 /* MAIN */
 /* header */
