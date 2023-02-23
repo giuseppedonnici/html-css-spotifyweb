@@ -20,6 +20,10 @@ ul {
     list-style-type: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Utilities */
 .uppercase {
     text-transform: uppercase;
@@ -91,6 +95,7 @@ main {
 .main-content {
     width: 100%;
     height: calc(100% - var(--header-height));
+    background-color: #141922;
 }
 
 .navbar {
@@ -101,10 +106,7 @@ main {
 
 section {
     padding: 15px;
-    /* debug */
-    height: 250px;
-    background-color: chartreuse;
-    border: 1px solid red;
+    color: white;
 }
 
 .row {
@@ -114,10 +116,8 @@ section {
 
 .col {
     width: calc(100% / 6 - 15px);
-    height: 100px;
     margin-right: 15px;
     margin-top: 15px;
-    border: 1px solid black;
 }
 
 /* Footer layout */
@@ -236,3 +236,19 @@ ul img {
     width: 30%;
 }
 /* ********Trick******** */
+
+/* Sections */
+
+section h2 {
+    margin: 10px 0;
+}
+
+.card-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card p {
+    color: #656565;
+    margin-top: 10px;
+}
