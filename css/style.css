@@ -392,8 +392,9 @@ section p {
 
 /* HOVER */
 .navbar span:hover,
-.sidebar span:hover {
+.sidebar a:hover {
     color: white;
+    filter: brightness(100);
 }
 
 .recently .card:hover .card-img img {
@@ -402,4 +403,8 @@ section p {
 
 .recently .card:hover .card-img .play-hover{
     display: block;
+}
+
+.header a:hover {
+    transform: scale(1.1);
 }
