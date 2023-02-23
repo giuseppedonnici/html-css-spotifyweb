@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --sidebar-width: 200px;
+    --sidebar-width: 250px;
     --player-height: 100px;
     --header-height: 80px;
     --navbar-height: 30px;
@@ -149,6 +149,7 @@ main {
 .sidebar .up {
     overflow-y: auto;
 }
+
 .logo {
     width: 65%;
     margin: 15px;
@@ -257,3 +258,44 @@ section p {
 .artist img {
     border-radius: 50%;
 }
+
+/* Footer */
+/* Footer left */
+.player .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #656565;
+}
+
+.player .card {
+    display: flex;
+    align-items: center;
+    width: 142px;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.player .card-img {
+    width: 50px;
+    height: 50px;
+}
+
+.player .card-content {
+    margin-top: 0;
+    margin-left: 15px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.player .card-content h3 {
+    color: white;
+}
+
+.heart-folder {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+}
+/* /Footer left */
+
