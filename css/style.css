@@ -177,9 +177,20 @@ ul img {
     padding: 5px 15px;
 }
 
-.home li:first-child {
-    border-left: 3px solid #ADFF2F;
+/* Bonus */
+.sidebar .up .active {
+    position: relative;
 }
+
+.sidebar li.active::before {
+    content: '';
+    height: 35px;
+    border: 2px solid #ADFF2F;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* /Bonus */
 
 .playlist i {
     padding: 10px;
@@ -226,18 +237,23 @@ ul img {
     color: #656565;
 }
 
-/* ********Trick******** */
-.evidenza {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Bonus */
+.navbar ul li.active {
+    position: relative;
 }
 
-.evi-bord {
+.navbar ul li.active::after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
     border: 2px solid #ADFF2F;
-    width: 30%;
+    width: 25%;
+    margin-top: 1px;
 }
-/* ********Trick******** */
+/* /Bonus */
 
 /* Sections */
 
