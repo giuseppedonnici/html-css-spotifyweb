@@ -71,7 +71,6 @@ main {
     justify-content: space-between;
     width: 100%;
     height: var(--player-height);
-    /* debug */
     background-color: #282828;
 }
 
