@@ -409,11 +409,11 @@ section p {
     filter: brightness(100);
 }
 
-.recently .card:hover .card-img img {
+.main-content .card:hover .card-img img {
     opacity: 0.7;
 }
 
-.recently .card:hover .card-img .play-hover{
+.main-content .card:hover .card-img .play-hover{
     display: block;
 }
 
