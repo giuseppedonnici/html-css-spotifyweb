@@ -336,6 +336,7 @@ section p {
 .time-container {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .time-container time {
@@ -350,11 +351,24 @@ section p {
     width: 37%;
 }
 
-.bar-20 {
-    width: 20%;
+.bar-40 {
+    position: relative;
+    width: 40%;
     height: 5px;
     background-color: #C1C1C1;
     border-radius: 5px;
+}
+
+.dot {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+
 }
 
 .bar-80 {
@@ -415,4 +429,16 @@ section p {
 
 .player .left .heart-folder a:hover {
     color: white;
+}
+
+.media-play .play:hover {
+    transform: scale(1.1);
+}
+
+.player .bar-container:hover .dot {
+    display: block;
+}
+
+.player .bar-container:hover .bar-40 {
+    background-color: #ADFF2F;
 }
