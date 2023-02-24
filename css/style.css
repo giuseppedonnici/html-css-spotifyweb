@@ -96,6 +96,7 @@ main {
 /* Content layout */
 .header {
     position: fixed;
+    z-index: 999;
     top: 0;
     right: 0;
     display: flex;
@@ -132,12 +133,10 @@ main {
 /* Footer layout */
 .left, .right {
     width: var(--sidebar-width);
-    height: 100%;
 }
 
 .center {
     flex-grow: 1;
-    height: 100%;
 }
 
 /* MAIN */
