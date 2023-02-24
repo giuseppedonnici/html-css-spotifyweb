@@ -39,6 +39,15 @@
         align-items: center;
     }
 
+    .sidebar li.active::before {
+        content: '';
+        height: 25px;
+        border: 2px solid #ADFF2F;
+        position: absolute;
+        top: 2px;
+        left: 0;
+    }
+
     .sidebar .down {
         display: flex;
         flex-direction: column;
